@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    {% comment %} <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a> {% endcomment %}
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% comment %}<div class="row align-items-center py-3 px-xl-5">{% endcomment %}
+          <center><div class="col-lg-3 d-none d-lg-block">
+                <a href="" class="text-decoration-none">
+                    <br><h1 class="m-0 display-5 font-weight-semi-bold">OLC Enterprises</h1>
+                </a>
+            </div></center>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+            {% comment %} <div class="col-lg-3 d-none d-lg-block"> {% endcomment %}
+                {% comment %} <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a> {% endcomment %}
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    {% comment %} <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Dresses <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Men's Dresses</a>
+                                <a href="" class="dropdown-item">Women's Dresses</a>
+                                <a href="" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">Shirts</a>
+                        <a href="" class="nav-item nav-link">Jeans</a>
+                        <a href="" class="nav-item nav-link">Swimwear</a>
+                        <a href="" class="nav-item nav-link">Sleepwear</a>
+                        <a href="" class="nav-item nav-link">Sportswear</a>
+                        <a href="" class="nav-item nav-link">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link">Blazers</a>
+                        <a href="" class="nav-item nav-link">Jackets</a>
+                        <a href="" class="nav-item nav-link">Shoes</a>
+                    </div> {% endcomment %}
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                  <center><a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold">OLC Enterprises</h1>
+                    </a></center>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="" class="nav-item nav-link">View Products</a>
+                            <a href="" class="nav-item nav-link">Book Products</a>
+                            <a href="" class="nav-item nav-link">Profile</a>
+                        </div>
+                        {% comment %} <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Login</a>
+                            <a href="" class="nav-item nav-link">Register</a>
+                        </div> {% endcomment %}
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+<style>
+    html {
+        height: 100%;
+      }
+      
+      body {
+        overflow: hidden;
+        background: #bcdee7 url("../img/bg.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: fixed;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        font: normal 14px/1.618em "Roboto", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      body:before {
+        content: "";
+        height: 0px;
+        padding: 0px;
+        border: 130em solid #313440;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        z-index: 2;
+        display: block;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+        animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+      }
+      
+      h1,
+      h2 {
+        font-weight: 500;
+        margin: 0px 0px 5px 0px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      h2 {
+        font-size: 16px;
+      }
+      
+      p {
+        margin: 0px;
+      }
+      
+      .profile-card {
+        background: #FFB300;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        overflow: hidden;
+        opacity: 0;
+        margin-top: 70px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+        -webkit-animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+        animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+      }
+      
+      .profile-card header {
+        width: 179px;
+        height: 280px;
+        padding: 40px 20px 30px 20px;
+        display: inline-block;
+        float: left;
+        border-right: 2px dashed #EEEEEE;
+        background: #FFFFFF;
+        color: #000000;
+        margin-top: 50px;
+        opacity: 0;
+        text-align: center;
+        -webkit-animation: moveIn 1s 3.1s ease forwards;
+        animation: moveIn 1s 3.1s ease forwards;
+      }
+      
+      .profile-card header h1 {
+        color: #FF5722;
+      }
+      
+      .profile-card header a {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin: 25px 30px;
+      }
+      
+      .profile-card header a:after {
+        position: absolute;
+        content: "";
+        bottom: 3px;
+        right: 3px;
+        width: 20px;
+        height: 20px;
+        border: 4px solid #FFFFFF;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        background: -webkit-linear-gradient(top, #2196F3 0%, #2196F3 50%, #FFC107 50%, #FFC107 100%);
+        background: linear-gradient(#2196F3 0%, #2196F3 50%, #FFC107 50%, #FFC107 100%);
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        -webkit-animation: scaleIn 0.3s 3.5s ease forwards;
+        animation: scaleIn 0.3s 3.5s ease forwards;
+      }
+      
+      .profile-card header a > img {
+        width: 120px;
+        max-width: 100%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: -webkit-box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease;
+        -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+      }
+      
+      .profile-card header a:hover > img {
+        -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .profile-card .profile-bio {
+        width: 175px;
+        height: 180px;
+        display: inline-block;
+        float: right;
+        padding: 50px 20px 30px 20px;
+        background: #FFFFFF;
+        color: #333333;
+        margin-top: 50px;
+        text-align: center;
+        opacity: 0;
+        -webkit-animation: moveIn 1s 3.1s ease forwards;
+        animation: moveIn 1s 3.1s ease forwards;
+      }
+      
+      .profile-social-links {
+        width: 218px;
+        display: inline-block;
+        float: right;
+        margin: 0px;
+        padding: 15px 20px;
+        background: #FFFFFF;
+        margin-top: 50px;
+        text-align: center;
+        opacity: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-animation: moveIn 1s 3.1s ease forwards;
+        animation: moveIn 1s 3.1s ease forwards;
+      }
+      
+      .profile-social-links li {
+        list-style: none;
+        margin: -5px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+        width: 25%;
+        text-align: center;
+      }
+      
+      .profile-social-links li a {
+        display: inline-block;
+        color: red;
+        width: 24px;
+        height: 24px;
+        padding: 6px;
+        position: relative;
+        overflow: hidden!important;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+      
+      .profile-social-links li a i {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .profile-social-links li a img,
+      .profile-social-links li a svg {
+        width: 24px;
+      }
+      
+      @-webkit-keyframes init {
+        0% {
+          width: 0px;
+          height: 0px;
+        }
+        100% {
+          width: 56px;
+          height: 56px;
+          margin-top: 0px;
+          opacity: 1;
+        }
+      }
+      
+      @keyframes init {
+        0% {
+          width: 0px;
+          height: 0px;
+        }
+        100% {
+          width: 56px;
+          height: 56px;
+          margin-top: 0px;
+          opacity: 1;
+        }
+      }
+      
+      @-webkit-keyframes puff {
+        0% {
+          top: 100%;
+          height: 0px;
+          padding: 0px;
+        }
+        100% {
+          top: 50%;
+          height: 100%;
+          padding: 0px 100%;
+        }
+      }
+      
+      @keyframes puff {
+        0% {
+          top: 100%;
+          height: 0px;
+          padding: 0px;
+        }
+        100% {
+          top: 50%;
+          height: 100%;
+          padding: 0px 100%;
+        }
+      }
+      
+      @-webkit-keyframes borderRadius {
+        0% {
+          -webkit-border-radius: 50%;
+        }
+        100% {
+          -webkit-border-radius: 0px;
+        }
+      }
+      
+      @keyframes borderRadius {
+        0% {
+          -webkit-border-radius: 50%;
+        }
+        100% {
+          border-radius: 0px;
+        }
+      }
+      
+      @-webkit-keyframes moveDown {
+        0% {
+          top: 50%;
+        }
+        50% {
+          top: 40%;
+        }
+        100% {
+          top: 100%;
+        }
+      }
+      
+      @keyframes moveDown {
+        0% {
+          top: 50%;
+        }
+        50% {
+          top: 40%;
+        }
+        100% {
+          top: 100%;
+        }
+      }
+      
+      @-webkit-keyframes moveUp {
+        0% {
+          background: #FFB300;
+          top: 100%;
+        }
+        50% {
+          top: 40%;
+        }
+        100% {
+          top: 50%;
+          background: #E0E0E0;
+        }
+      }
+      
+      @keyframes moveUp {
+        0% {
+          background: #FFB300;
+          top: 100%;
+        }
+        50% {
+          top: 40%;
+        }
+        100% {
+          top: 50%;
+          background: #E0E0E0;
+        }
+      }
+      
+      @-webkit-keyframes materia {
+        0% {
+          background: #E0E0E0;
+        }
+        50% {
+          -webkit-border-radius: 4px;
+        }
+        100% {
+          width: 440px;
+          height: 280px;
+          background: #FFFFFF;
+          -webkit-border-radius: 4px;
+        }
+      }
+      
+      @keyframes materia {
+        0% {
+          background: #E0E0E0;
+        }
+        50% {
+          border-radius: 4px;
+        }
+        100% {
+          width: 440px;
+          height: 280px;
+          background: #FFFFFF;
+          border-radius: 4px;
+        }
+      }
+      
+      @-webkit-keyframes moveIn {
+        0% {
+          margin-top: 50px;
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          margin-top: -20px;
+        }
+      }
+      
+      @keyframes moveIn {
+        0% {
+          margin-top: 50px;
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          margin-top: -20px;
+        }
+      }
+      
+      @-webkit-keyframes scaleIn {
+        0% {
+          -webkit-transform: scale(0);
+        }
+        100% {
+          -webkit-transform: scale(1);
+        }
+      }
+      
+      @keyframes scaleIn {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      @-webkit-keyframes ripple {
+        0% {
+          transform: scale3d(0, 0, 0);
+        }
+        50%,
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+      @keyframes ripple {
+        0% {
+          transform: scale3d(0, 0, 0);
+        }
+        50%,
+        100% {
+          transform: scale3d(1, 1, 1);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+      @media screen and (min-aspect-ratio: 4/3) {
+        body {
+          background-size: cover;
+        }
+        body:before {
+          width: 0px;
+        }
+        @ -webkit-keyframes puff {
+          0% {
+            top: 100%;
+            width: 0px;
+            padding-bottom: 0px;
+          }
+          100% {
+            top: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+          }
+        }
+        @keyframes puff {
+          0% {
+            top: 100%;
+            width: 0px;
+            padding-bottom: 0px;
+          }
+          100% {
+            top: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+          }
+        }
+      }
+      
+      @media screen and (min-height: 480px) {
+        .profile-card header {
+          width: auto;
+          height: auto;
+          padding: 30px 20px;
+          display: block;
+          float: none;
+          border-right: none;
+        }
+        .profile-card .profile-bio {
+          width: auto;
+          height: auto;
+          padding: 15px 20px 30px 20px;
+          display: block;
+          float: none;
+        }
+        .profile-social-links {
+          width: 100%;
+          display: block;
+          float: none;
+        }
+        @ -webkit-keyframes materia {
+          0% {
+            background: #E0E0E0;
+          }
+          50% {
+            -webkit-border-radius: 4px;
+          }
+          100% {
+            width: 280px;
+            height: 440px;
+            background: #FFFFFF;
+            -webkit-border-radius: 4px;
+          }
+        }
+        @keyframes materia {
+          0% {
+            background: #E0E0E0;
+          }
+          50% {
+            border-radius: 4px;
+          }
+          100% {
+            width: 280px;
+            height: 440px;
+            background: #FFFFFF;
+            border-radius: 4px;
+          }
+        }
+      }
+    </style>
+
+{% if pd.id %}
+    <aside class="profile-card">
+        <header>
+          <!-- here’s the avatar -->
+          <a target="_blank" href="#">
+            <img src="{{pd.Photo.url}}" class="hoverZoomLink">
+          </a>
+      
+          <!-- the username -->
+          <h1>
+                  {{pd.Cname}}
+                </h1>
+      
+          <!-- and role or location -->
+          <h2>
+                  {{pd.Email}}
+                </h2>
+      
+        </header>
+      
+        <!-- bit of a bio; who are you? -->
+        <div class="profile-bio">
+      
+          <p>
+            Phone: {{pd.Phoneno}}<br>
+            Homename: {{pd.Homename}}<br>
+            Location: {{pd.Location}}<br>
+            Pincode: {{pd.Pincode}}<br>
+            Password: {{pd.Password}}<br>
+            <a href="{% url 'seditprof' pd.id %}" >Edit Profile</a>
+
+            <br><a href="staffhome" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Back</a>
+          </p>
+      
+        </div>
+      
+        <!-- some social links to show off -->
+        <ul class="profile-social-links">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/creativedonut">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/dropyourbass">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/vipulsaxena">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.behance.net/vipulsaxena">
+             
+              <i class="fa fa-behance"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+{% endif %}
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

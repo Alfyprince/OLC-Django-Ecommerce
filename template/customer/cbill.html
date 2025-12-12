@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    {% comment %} <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a> {% endcomment %}
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+{% comment %}<div class="row align-items-center py-3 px-xl-5">{% endcomment %}
+    <center>
+        <div>
+            <a href="" class="text-decoration-none">
+                <br><h3 class="m-0 display-5 font-weight-semi-bold">BILL</h3>
+            </a>
+        </div>
+    </center>
+            {% comment %} <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div> {% endcomment %}
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <style>
+        body ,.navbar-expand-lg .navbar-collapse{
+            background:#666666;
+        }
+    </style>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div>
+            {% comment %} <div class="col-lg-3 d-none d-lg-block"> {% endcomment %}
+                {% comment %} <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a> {% endcomment %}
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    {% comment %} <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Dresses <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Men's Dresses</a>
+                                <a href="" class="dropdown-item">Women's Dresses</a>
+                                <a href="" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">Shirts</a>
+                        <a href="" class="nav-item nav-link">Jeans</a>
+                        <a href="" class="nav-item nav-link">Swimwear</a>
+                        <a href="" class="nav-item nav-link">Sleepwear</a>
+                        <a href="" class="nav-item nav-link">Sportswear</a>
+                        <a href="" class="nav-item nav-link">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link">Blazers</a>
+                        <a href="" class="nav-item nav-link">Jackets</a>
+                        <a href="" class="nav-item nav-link">Shoes</a>
+                    </div> {% endcomment %}
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    
+                    <center><a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold">OLC Enterprises</h1>
+                    </a><center>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            {% comment %}<a href="chome" class="nav-item nav-link active"style="color:black;"><b>Home</b></a>{% endcomment %}
+                            {% comment %} <a href="" class="nav-item nav-link">Products</a> {% endcomment %}
+                            {% comment %} <a href="" class="nav-item nav-link">Shop Detail</a> {% endcomment %}
+                            {% comment %} <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Register</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">ADMIN</a>
+                                    <a href="checkout.html" class="dropdown-item">CUSTOMER</a>
+                                    <a href="checkout.html" class="dropdown-item">STAFF</a>
+                                    <a href="checkout.html" class="dropdown-item">COMPANY</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">ADMIN</a>
+                                    <a href="checkout.html" class="dropdown-item">CUSTOMER</a>
+                                    <a href="checkout.html" class="dropdown-item">STAFF</a>
+                                    <a href="checkout.html" class="dropdown-item">COMPANY</a>
+                                </div>
+                            </div> {% endcomment %}
+                            {% comment %} <a href="contact.html" class="nav-item nav-link">Contact</a> {% endcomment %}
+                        </div>
+                        {% comment %} <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Login</a>
+                            <a href="" class="nav-item nav-link">Register</a>
+                        </div> {% endcomment %}
+                    </div>
+                </nav>
+                <br><a href="chome" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>          
+
+
+
+                <style>
+                    body {
+                        background: #666666 ;
+                      }
+                      .navbar-collapse {
+                        background: #666666;
+                    }
+                    .container {
+                      max-width: 1140px;
+                      padding-left: 21%;
+                      padding-right: 0%;
+                  }
+                </style>
+
+                <style>
+                    /*author:starttemplate*/
+                /*reference site : starttemplate.com*/
+                
+                body {
+                  background-image:url('../static/img/0.6.jpg');
+                  background-position:center;
+                  background-size:cover;
+                  
+                  -webkit-font-smoothing: antialiased;
+                  font: normal 14px Roboto,arial,sans-serif;
+                  font-family: 'Times New Roman', cursive!important;
+                }
+                
+                .container {
+                    padding: 110px;
+                }
+                ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #ffffff!important;
+                    opacity: 1; /* Firefox */
+                    font-size:18px!important;
+                }
+                .form-login {
+                    background-color:#8b4c4c1a;
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-radius: 15px;
+                    border-color:#d2d2d2;
+                    border-width: 5px;
+                    color:white;
+                    box-shadow:0 1px 0 #562f2f00;
+                }
+                .form-control{
+                    background:transparent!important;
+                    color:white!important;
+                    font-size: 18px!important;
+                }
+                h1{
+                    color:white!important;
+                }
+                h4 { 
+                 border:0 solid #fff; 
+                 border-bottom-width:1px;
+                 padding-bottom:10px;
+                 text-align: center;
+                }
+                
+                .form-control {
+                    border-radius: 10px;
+                }
+                .text-white{
+                    color: white!important;
+                }
+                .wrapper {
+                    text-align: center;
+                }
+                .footer p{
+                    font-size: 18px;
+                }
+                .btn-primary {
+                    color: #212529;
+                    background-color: #D19C97;
+                    border-color: #D19C97;
+                    margin-left: -700px;
+                }
+                </style>
+              
+
+
+
+                <style>
+                    @import url('http://fonts.cdnfonts.com/css/vcr-osd-mono');
+                    body {
+                      font-family: 'VCR OSD Mono';
+                      color: #000;
+                      text-align:center;
+                      background:#666666;
+                      font-size: 10px;
+                    }
+                    .bill {
+                        width: 600px;
+                        height: 400px;
+                        box-shadow: 0 0 3px #aaa;
+                        padding: 10px 10px;
+                        box-sizing: border-box;
+                        margin-left: 353px;
+                        background: #ffffff;
+                        margin-top: 52px;
+                    }
+                    .flex {
+                      display: flex;
+                    }
+                    .justify-between {
+                      justify-content: space-between;
+                    }
+                    .table{
+                      border-collapse: collapse;
+                      width: 100%;
+                      height: 200px;
+                    }
+                    .table .header{
+                      border-top: 2px dashed #000;
+                      border-bottom: 2px dashed #000;
+                    }
+                    .table {
+                      text-align: left;
+                    }
+                    .table .total td:first-of-type {
+                      border-top: none;
+                      border-bottom: none;
+                    }
+                    .table th, .table td {
+                        padding: 0.75rem;
+                        vertical-align: top;
+                        border-top: 1px solid #EDF1FF;
+                        font-size: 17px;
+                    }
+                    .table .total td {
+                      border-top: 2px dashed #000;
+                      border-bottom: 2px dashed #000;
+                    }
+                    .table .net-amount td:first-of-type {
+                      border-top: none;
+                    }
+                    .table .net-amount td {
+                      border-top: 2px dashed #000;
+                    }
+                    .table .net-amount{
+                      border-bottom: 2px dashed #000;
+                    }
+                    @media print {
+                        .hidden-print,
+                        .hidden-print * {
+                            display: none !important;
+                        }
+                    }    
+                </style>
+                <br><br><br><br>
+                
+                {% for pro in pro %}
+                <div class="bill">
+                    <div class="brand">
+                       OLC Enterprises PVT LTD
+                    </div>
+                    <div class="address">
+                        Thiruthiparambu, P.O.Mundathicode, Wadakkanchery-680 601, Thrissur, Kerala
+                    </div>
+                    <div class="shop-details">
+                      PAN: AAKPS9298A TIN: 09820163701
+                    </div>
+                    <div>RETAIL INVOICE </div>
+                    <div class="bill-details">
+                      <div class="flex justify-between">
+                        <div>BILL NO: 091</div>
+                        <div>TABLE NO: 091</div>
+                      </div>
+                       <div class="flex justify-between">
+                        <div>BILL DATE: {{pro.date}}</div>
+                        <div>TIME: 12.00 PM</div>
+                      </div>
+                    </div>
+                    <table class="table">
+                      <tr class="header">
+                      <th>
+                        Particulars
+                      </th> <th>
+                        Rate
+                      </th> <th>
+                        Qty
+                      </th>
+                         <th>
+                        Amount
+                      </th>
+                      </tr>
+                      <tr>
+                        <td>{{pro.pname}}</td>
+                        <td>{{pro.price}}</td>
+                        <td>{{pro.quantity}}</td>
+                        <td>{{sum}}</td>
+                      </tr>
+                      <tr class="net-amount">
+                        <td></td>
+                        <td>Net Amnt</td>
+                        <td></td>
+                        <td>{{sum}}</td>
+                      </tr>
+                    </table>
+                    Payment Method:Razorpay<br>
+                   Transaction ID: 082098082783
+                    <br>Username: {{pro.customer}} <br>
+                    Thank You ! Please visit again
+                  </div>
+                {% endfor %}
+                
+                
+                
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

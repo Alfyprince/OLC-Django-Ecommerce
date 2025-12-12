@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <style>
+        
+        .nav {
+            list-style-type: none;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            margin-inline-start: auto;
+        }
+        .nav li {
+            display:inline-block;
+            font-size:15px;
+            padding:8px;
+    
+        }
+        .carousel-inner {
+            position: relative;
+            width: 1340px;
+            overflow: hidden;
+        }
+        </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    {% if pro.id %}
+    <div>
+        <div class="row bg-white py-0 px-xl-1">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <i class='fas fa-user-circle'style='font-size:30px;color:black'></i>&nbsp;
+                    <h3>{{pro.Comname}}</h3>                      
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+            
+        {% comment %} </div> {% endcomment %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {% comment %} <center>
+                {% if pro.id %}
+                <div>
+                    <a href="" class="text-decoration-none">
+                        <br><h1 class="m-0 display-4 font-weight-semi-bold">{{pro.Comname}}</h1>
+                    </a>
+                </div>
+            </center>
+             {% endcomment %}
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    
+
+
+    
+    <!-- Navbar Start -->
+    <div>
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <img class="img-fluid" src="{{pro.Photo.url}}" alt="Image" style="height: 650px;width:1340px;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h4 class="text-light text-uppercase font-weight-medium mb-3"></h4>
+                        <div class="carousel-caption d-flex flex-column align-items-top justify-content-top">
+                            <ul class="nav">
+                                <li><a href="vprods" class="nav-item nav-link"style="color:white;"><b>Order from OLC</b></a></li>
+                                <li><a href="accprods" class="nav-item nav-link"style="color:white;"><b>Accepted Products</b></a></li>
+                                <li><a href="viewcopml" class="nav-item nav-link"style="color:white;"><b>View Complaints</b></a></li>
+                                <li><a href="comprofile" class="nav-item nav-link"style="color:white;"><b>Profile</b></a></li>
+                                <li><a href="/" class="nav-item nav-link active"style="color:white;"><i class="fa fa-power-off" style="color:white;"></i>&nbsp;&nbsp;<b>Log out</b></a></li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navbar End -->
+
+
+   
+
+
+    <!-- Footer Start -->
+    {% if pro.id %}
+    <div class="container-fluid bg-white text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-12 col-md-12">
+                
+                <center><a href="" class="text-decoration-none">
+                   <center> <h1 class="mb-4 display-5 font-weight-semi-bold">{{pro.Comname}}</h1></center>
+                </a></center>
+                <center><p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>{{pro.Location}}, {{pro.Place}}<br>{{pro.District}}-{{pro.Pincode}}</p></center>
+                <center><p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>{{pro.Email}}</p></center>
+                <center><p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 {{pro.Phoneno}} </p></center>
+            
+            </div>
+            {% endif %}
+
+            
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+              
+            </div>
+            
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

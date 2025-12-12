@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <style>
+        body {
+            background: #666666 ;
+          }
+          .navbar-collapse {
+            background: #666666;
+        }
+        .container {
+          max-width: 1140px;
+          padding-left: 21%;
+          padding-right: 0%;
+      }
+    </style>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+box-sizing: border-box;
+}
+
+
+
+.text-center {
+text-align: center;
+}
+
+.pricing-box-container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+width:100%;
+}
+
+.pricing-box {
+background-color: #ffffff;
+box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+border-radius: 4px;
+flex: 1;
+padding: 0 30px 30px;
+margin: 2%;
+min-width: 250px;
+max-width: 350px;
+}
+
+.pricing-box h5 {
+text-transform: uppercase;
+}
+
+.price {
+margin: 24px 0;
+font-size: 36px;
+font-weight: 900;
+}
+
+.price sub, .price sup {
+font-size: 16px;
+font-weight: 100;
+}
+
+.features-list {
+padding: 0;
+list-style-type: none;
+}
+
+.features-list li {
+font-weight: 100;
+padding: 12px 0;
+font-weight: 100;
+}
+
+.features-list li:not(:last-of-type) {
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+border-radius: 25px;
+border: none;
+background-color: #666666;
+color: #ffffff;
+cursor: pointer;
+padding: 10px 15px;
+margin-top: 20px;
+text-transform: uppercase;
+transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+transform: translateY(-3px);
+}
+
+.pricing-box-bg-image {
+background-image: url('https://images.unsplash.com/photo-1550029402-226115b7c579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80');
+background-size: cover;
+background-position: center center;
+color: #ffffff;
+}
+
+.pricing-box-bg-image .features-list li {
+border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+.pricing-box-bg-image .btn-primary {
+background-color: #ffffff;
+color: #000;
+}
+
+footer {
+background-color: #222;
+color: #fff;
+font-size: 14px;
+bottom: 0;
+position: fixed;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+footer p {
+margin: 10px 0;
+}
+
+footer i {
+color: red;
+}
+
+footer a {
+color: #3C97BF;
+text-decoration: none;
+}
+</style>
+
+
+<style>
+.nav {
+list-style-type:none;
+text-align:left;
+margin:0;
+padding:0;
+}
+.nav li {
+display:inline-block;
+font-size:15px;
+padding:8px;
+
+}
+</style>
+
+<style>
+/*author:starttemplate*/
+/*reference site : starttemplate.com*/
+
+body {
+background-image:url('../static/img/1.6.jpg');
+background-position:center;
+background-size:cover;
+
+-webkit-font-smoothing: antialiased;
+font: normal 14px Roboto,arial,sans-serif;
+font-family: 'Times New Roman', cursive!important;
+}
+
+.container {
+padding: 110px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #ffffff!important;
+opacity: 1; /* Firefox */
+font-size:18px!important;
+}
+.form-login {
+background-color:#8b4c4c1a;
+padding-top: 10px;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 15px;
+border-color:#d2d2d2;
+border-width: 5px;
+color:white;
+box-shadow:0 1px 0 #562f2f00;
+}
+.form-control{
+background:transparent!important;
+color:white!important;
+font-size: 18px!important;
+}
+h1{
+color:white!important;
+}
+h4 { 
+border:0 solid #fff; 
+border-bottom-width:1px;
+padding-bottom:10px;
+text-align: center;
+}
+
+.form-control {
+border-radius: 10px;
+}
+.text-white{
+color: white!important;
+}
+.wrapper {
+text-align: center;
+}
+.footer p{
+font-size: 18px;
+}
+</style>
+
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-white py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    {% comment %} <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a> {% endcomment %}
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+{% comment %}<div class="row align-items-center py-3 px-xl-5">{% endcomment %}
+    <center>
+        <div>
+            <a href="" class="text-decoration-none">
+                <br><h1 class="m-0 display-5 font-weight-semi-bold">Booked Product</h1>
+            </a>
+        </div>
+    </center>
+            {% comment %} <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div> {% endcomment %}
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    {% comment %} <style>
+        body ,.navbar-expand-lg .navbar-collapse{
+            background:#666666;
+        }
+    </style> {% endcomment %}
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div>
+            {% comment %} <div class="col-lg-3 d-none d-lg-block"> {% endcomment %}
+                {% comment %} <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a> {% endcomment %}
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    {% comment %} <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Dresses <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Men's Dresses</a>
+                                <a href="" class="dropdown-item">Women's Dresses</a>
+                                <a href="" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">Shirts</a>
+                        <a href="" class="nav-item nav-link">Jeans</a>
+                        <a href="" class="nav-item nav-link">Swimwear</a>
+                        <a href="" class="nav-item nav-link">Sleepwear</a>
+                        <a href="" class="nav-item nav-link">Sportswear</a>
+                        <a href="" class="nav-item nav-link">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link">Blazers</a>
+                        <a href="" class="nav-item nav-link">Jackets</a>
+                        <a href="" class="nav-item nav-link">Shoes</a>
+                    </div> {% endcomment %}
+                </nav>
+            </div>
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    
+                    <center><a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold">OLC Enterprises</h1>
+                    </a><center>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            {% comment %}<a href="chome" class="nav-item nav-link active"style="color:black;"><b>Home</b></a>{% endcomment %}
+                            {% comment %} <a href="" class="nav-item nav-link">Products</a> {% endcomment %}
+                            {% comment %} <a href="" class="nav-item nav-link">Shop Detail</a> {% endcomment %}
+                            {% comment %} <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Register</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">ADMIN</a>
+                                    <a href="checkout.html" class="dropdown-item">CUSTOMER</a>
+                                    <a href="checkout.html" class="dropdown-item">STAFF</a>
+                                    <a href="checkout.html" class="dropdown-item">COMPANY</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">ADMIN</a>
+                                    <a href="checkout.html" class="dropdown-item">CUSTOMER</a>
+                                    <a href="checkout.html" class="dropdown-item">STAFF</a>
+                                    <a href="checkout.html" class="dropdown-item">COMPANY</a>
+                                </div>
+                            </div> {% endcomment %}
+                            {% comment %} <a href="contact.html" class="nav-item nav-link">Contact</a> {% endcomment %}
+                        </div>
+                        {% comment %} <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Login</a>
+                            <a href="" class="nav-item nav-link">Register</a>
+                        </div> {% endcomment %}
+                    </div>
+                </nav>
+                <br><a href="staffhome" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Back</a>          
+
+
+
+             
+{% comment %} <h1 class="text-center">Pick the best plan for you</h1> {% endcomment %}
+
+<div class="pricing-box-container">
+{% for pd in pro %} 
+	<div class="pricing-box text-center">
+        
+		<h5></h5>
+		{% comment %} <p class="price"><sup>$</sup>0<sub>/mo</sub></p> {% endcomment %}
+		<ul class="features-list">
+			<li><strong>{{pd.customer}}</strong> </li>
+			<li><strong>{{pd.customer.Phoneno}}</strong> </li>
+			<li><strong>{{pd.customer.Homename}},{{pd.customer.Location}}</strong> </li>
+			<li><strong>{{pd.customer.Pincode}}</strong> </li>
+			<li><strong>{{pd.pname}}</strong> </li>
+			<li><strong>{{pd.ptype}}</strong> </li>
+		</ul>
+        {% if pros %}
+		<a href="{% url 'delivered' pd.id %}" class="btn-primary">Delivered</a>
+        {% endif %}
+
+        
+		{% comment %} <a href="{% url 'complaint' pd.id %}" class="btn-primary">Complaint</a> {% endcomment %}
+	</div>
+    {% endfor %}	
+</div>
+
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

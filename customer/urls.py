@@ -1,0 +1,72 @@
+from django.contrib import admin
+from django.urls import path,include
+from . import views
+
+urlpatterns = [
+    path('chome',views.chome,name="chome"),
+    path('clog',views.clog,name="clog"),
+    path('creg',views.creg,name="creg"),
+    path('vswrds',views.vswrds,name="vswrds"),
+    path('vunddf',views.vunddf,name="vunddf"),
+    path('vrainwh',views.vrainwh,name="vrainwh"),
+    path('vsatr',views.vsatr,name="vsatr"),
+    path('vcpvc',views.vcpvc,name="vcpvc"),
+    path('vupvc',views.vupvc,name="vupvc"),
+    path('vpvc',views.vpvc,name="vpvc"),
+    path('vlight',views.vlight,name="vlight"),
+    path('vswitch',views.vswitch,name="vswitch"),
+    path('vfan',views.vfan,name="vfan"),
+    
+    path('virons',views.virons,name="virons"),
+    path('vmixer',views.vmixer,name="vmixer"),
+    path('vtank',views.vtank,name="vtank"),
+    path('vtap',views.vtap,name="vtap"),
+
+    path('cprof',views.cprof,name="cprof"),
+    path('prodcat',views.prodcat,name="prodcat"),
+    path('prodet<int:id>',views.prodet,name="prodet"),
+    path('book<int:id>',views.book,name="book"),
+    path('ccart',views.ccart,name="ccart"),
+    path('remove<int:id>',views.remove,name="remove"),
+    path('cpayment',views.cpayment,name="cpayment"),
+    path('editprof<int:id>',views.editprof,name="editprof"),
+    path('bkdprod',views.bkdprod,name="bkdprod"),
+    path('complaint<int:id>',views.complaint,name="complaint"),
+    path('prorate<int:id>',views.prorate,name="prorate"),
+    path('vcomplaint',views.vcomplaint,name="vcomplaint"),
+
+    path('dryiron',views.dryiron,name="dryiron"),
+    path('steamiron',views.steamiron,name="steamiron"),
+    path('mirrlight',views.mirrlight,name="mirrlight"),
+    path('hanglight',views.hanglight,name="hanglight"),
+    path('walllight',views.walllight,name="walllight"),
+    path('tubelight',views.tubelight,name="tubelight"),
+    path('filalight',views.filalight,name="filalight"),
+    path('glowlight',views.glowlight,name="glowlight"),
+    path('panellight',views.panellight,name="panellight"),
+    path('zoomlight',views.zoomlight,name="zoomlight"),
+    path('floodlight',views.floodlight,name="floodlight"),
+    path('mountfan',views.mountfan,name="mountfan"),
+    path('perfan',views.perfan,name="perfan"),
+    path('domfan',views.domfan,name="domfan"),
+    path('wallfan',views.wallfan,name="wallfan"),
+    path('pedestalfan',views.pedestalfan,name="pedestalfan"),
+    path('tablefan',views.tablefan,name="tablefan"),
+    path('ceilfan',views.ceilfan,name="ceilfan"),
+    path('staintap',views.staintap,name="staintap"),
+    path('plastic',views.plastic,name="plastic"),
+    path('tape',views.tape,name="tape"),
+    path('ltankcov',views.ltankcov,name="ltankcov"),
+    path('lofttank',views.lofttank,name="lofttank"),
+    path('silktank',views.silktank,name="silktank"),
+    path('tank',views.tank,name="tank"),
+    
+    path('accessories',views.accessories,name="accessories"),
+    path('switchaccessories',views.switchaccessories,name="switchaccessories"),
+    path('switchgears',views.switchgears,name="switchgears"),
+    path('wirecable',views.wirecable,name="wirecable"),
+    
+    path('cbill<int:id>',views.cbill,name="cbill"),
+
+
+]

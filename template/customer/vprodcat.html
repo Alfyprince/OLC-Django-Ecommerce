@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                {% comment %} <div class="d-inline-flex align-items-center">
+                    <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a>
+                </div> {% endcomment %}
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% comment %}<div class="row align-items-center py-3 px-xl-5">{% endcomment %}
+            {% comment %} <center> <div class="col-lg-3 d-none d-lg-block">
+                <br><a href="" class="text-decoration-none">
+                    <br><h3 class="m-0 display-5 font-weight-semi-bold">OLC ENTERPRISES</h3>
+                </a>
+            </div></center> {% endcomment %}
+            {% comment %}<div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>{% endcomment %}
+            {% comment %}<div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>{% endcomment %}
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div>
+            {% comment %} <div class="col-lg-3 d-none d-lg-block"> {% endcomment %}
+                {% comment %} <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a> {% endcomment %}
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    {% comment %} <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Dresses <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Men's Dresses</a>
+                                <a href="" class="dropdown-item">Women's Dresses</a>
+                                <a href="" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">Shirts</a>
+                        <a href="" class="nav-item nav-link">Jeans</a>
+                        <a href="" class="nav-item nav-link">Swimwear</a>
+                        <a href="" class="nav-item nav-link">Sleepwear</a>
+                        <a href="" class="nav-item nav-link">Sportswear</a>
+                        <a href="" class="nav-item nav-link">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link">Blazers</a>
+                        <a href="" class="nav-item nav-link">Jackets</a>
+                        <a href="" class="nav-item nav-link">Shoes</a>
+                    </div> {% endcomment %}
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <center><a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold">OLC ENTERPRISES</h1>
+                    </a></center>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="chome" class="nav-item nav-link active"style="color:black;"><b>Back</b></a>
+                            {% comment %} <a href="" class="nav-item nav-link">View Products</a>
+                            <a href="" class="nav-item nav-link">Book Products</a>
+                            <a href="" class="nav-item nav-link">Profile</a> {% endcomment %}
+                        </div>
+                        {% comment %} <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Login</a>
+                            <a href="" class="nav-item nav-link">Register</a>
+                        </div> {% endcomment %}
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+
+
+ <!-- Products Start -->
+ <div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+        
+        
+        
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vmixer" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/mixer.png' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">KITCHEN APPLIANCES</h5>
+                {% comment %} <a href="vmixer" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="virons" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/ironimg.jfif' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">IRONS</h5>
+                {% comment %} <a href="virons" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vlight" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/imag.jfif' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">LED Light</h5>
+                {% comment %} <a href="vlight" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vfan" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/LU DES FAN.jpeg' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">Fan</h5>
+                {% comment %} <a href="vfan" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vswitch" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/1ee.jfif' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">SWITCHES AND ACCESSORIES</h5>
+                {% comment %} <a href="vswitch" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vsatr" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/star-bond-1ltrl.jpg' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">Star Bond</h5>
+                {% comment %} <a href="vsatr" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vunddf" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/2 way with riser.png' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">Underground Drainage Fittings</h5>
+                {% comment %} <a href="vunddf" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vrainwh" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/half round centre drop.jpg' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">Rain Water Harvester</h5>
+                {% comment %} <a href="vrainwh" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vcpvc" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/CPVC.png' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">CPVC</h5>
+                {% comment %} <a href="vcpvc" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vpvc" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/coupler  full thread.png' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">PVC Pipe & Fittings</h5>
+                {% comment %} <a href="vpvc" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vupvc" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/REDUCING TEE.png' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">uPVC</h5>
+                {% comment %} <a href="vupvc" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vtap" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/images (4).jfif' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">TAP</h5>
+                {% comment %} <a href="vtap" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vtank" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/download (8).jfif' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">WATER TANK</h5>
+                {% comment %} <a href="vtank" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+            </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 pb-1">
+            <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                <p class="text-right"></p>
+                <a href="vswrds" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{% static 'img/single tee 87.5.jpg' %}" style="height:250px;width:300px" alt="">
+                </a>
+                <h5 class="font-weight-semi-bold m-0">SWR Drainage System</h5>
+                {% comment %} <a href="vswrds" class="btn btn-light py-2 px-3">View</a> {% endcomment %}
+                
+                {% comment %} <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                </div> {% endcomment %}
+            </div>
+        </div>
+
+
+
+       
+
+
+
+
+        
+    </div>
+</div>
+
+<!-- Products End -->
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

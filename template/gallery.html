@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+    {% comment %} <link href="{% static 'gallery/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'gallery/jquery-3.3.1.slim.min.js' %}" rel="stylesheet">
+    <link href="{% static 'gallery/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'gallery/bootstrap.bundle.min.js' %}" rel="stylesheet"> {% endcomment %}
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    {% comment %} <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a> {% endcomment %}
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% comment %}<div class="row align-items-center py-3 px-xl-5">{% endcomment %}
+        {% comment %} <center>
+            <div>
+                <a href="" class="text-decoration-none">
+                    <center><br><h1 class="m-0 display-5 font-weight-semi-bold"></h1></center>
+                </a>
+            </div>
+        </center> {% endcomment %}
+           {% comment %} <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>{% endcomment %}
+            {% comment %}<div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>{% endcomment %}
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+                <a href="/" class="nav-item nav-link active"style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Home</b></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<style>
+    
+    body {
+    background: #f4f4f4;
+    }
+  
+    .banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    }
+    .container-fluid1 {
+        width: 1290px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        background: #f4f4f4;
+    }
+</style>
+
+
+
+
+
+                <div class="container-fluid1">
+                    <div class="px-lg-5">
+                  
+                      <!-- For demo purpose -->
+                      <div class="row py-5">
+                        <div class="col-lg-12 mx-auto">
+                          <div class="text-white p-5 shadow-sm rounded banner">
+                            <h1 class="display-4"> Gallery</h1>
+                            {% comment %}<p class="lead">Bootstrap photogallery snippet.</p>{% endcomment %}
+                            {% comment %} <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-reset"> 
+                                          Bootstrapious</a>, Images by <a href="https://unsplash.com" class="text-reset">Unsplash</a>.
+                            </p> {% endcomment %}
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End -->
+                  
+                      <div class="row">
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/1g.png' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5>Mixer Grinder</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                            <div class="bg-white rounded shadow-sm"><img src="{% static 'img/ac.jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                              <div class="p-4">
+                                <h5> Iron Box</h5>
+                                {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                                {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                  <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                  <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+                                </div> {% endcomment %}
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End -->
+
+                          <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                            <div class="bg-white rounded shadow-sm"><img src="{% static 'img/Augusta.jpeg' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                              <div class="p-4">
+                                <h5> Fan</h5>
+                                {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                                {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                  <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                  <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+                                </div> {% endcomment %}
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/imag.jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Hanging Light</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/images (3).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Switches & Accessories</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/CPVC.png' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> CPVC Pipes </h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/LBPC03HG.jpg' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> LED Bulb</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">New</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download1.jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> UPVC Pipes</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download.jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5>Bond</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-info px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (9).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Wires & Cable</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                                <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (6).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Switchgears</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (3).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> PVC Pipes  </h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (4).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Underground Drainage Fittings</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                                <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/images (4).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Tap</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (2).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> SWR Drainage System</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (8).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Water Tank</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/download (11).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Stainless Steal Pipes</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/fan personal.png' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Personal Fan</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Gallery item -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/images (14).jfif' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Tape</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+
+                         <!-- Gallery item -->
+                         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                          <div class="bg-white rounded shadow-sm"><img src="{% static 'img/LWL106.jpg' %}" style="height:200px;width:276px" alt="" class="img-fluid card-img-top">
+                            <div class="p-4">
+                              <h5> Light</h5>
+                              {% comment %}<p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>{% endcomment %}
+                              {% comment %} <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                              </div> {% endcomment %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End -->
+                  
+                      </div>
+                      {% comment %} <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show me more</a></div> {% endcomment %}
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

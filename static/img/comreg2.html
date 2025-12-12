@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:8000/company/comreg -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="http://127.0.0.1:8000/company/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./comreg2_files/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./comreg2_files/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <style>
+        body ,.navbar-expand-lg .navbar-collapse{
+            background:#666666;
+        }
+    </style>
+
+    <style>
+        .nav {
+            list-style-type:none;
+            text-align:left;
+            margin:0;
+            padding:0;
+        }
+        .nav li {
+            display:inline-block;
+            font-size:15px;
+            padding:8px;
+    
+        }
+        </style>
+
+    <style>
+        /*author:starttemplate*/
+    /*reference site : starttemplate.com*/
+    
+    body {
+      background-image:url('../static/img/1.9.jpg');
+      background-position:center;
+      background-size:cover;
+      
+      -webkit-font-smoothing: antialiased;
+      font: normal 14px Roboto,arial,sans-serif;
+      font-family: 'Times New Roman', cursive!important;
+    }
+    
+    .container {
+        padding: 110px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ffffff!important;
+        opacity: 1; /* Firefox */
+        font-size:18px!important;
+    }
+    .form-login {
+        background-color:#8b4c4c1a;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        border-color:#d2d2d2;
+        border-width: 5px;
+        color:white;
+        box-shadow:0 1px 0 #562f2f00;
+    }
+    .form-control{
+        background:transparent!important;
+        color:white!important;
+        font-size: 18px!important;
+    }
+    h1{
+        color:white!important;
+    }
+    h4 { 
+     border:0 solid #fff; 
+     border-bottom-width:1px;
+     padding-bottom:10px;
+     text-align: center;
+    }
+    
+    .form-control {
+        border-radius: 10px;
+    }
+    .text-white{
+        color: white!important;
+    }
+    .wrapper {
+        text-align: center;
+    }
+    .footer p{
+        font-size: 18px;
+    }
+    </style>
+
+
+    <!-- Navbar Start -->
+    
+            <div>
+                <ul class="nav">
+                    <li><a href="http://127.0.0.1:8000/" class="nav-item nav-link active" style="color:black;"><b>Home</b></a></li>
+                    <li><a href="http://127.0.0.1:8000/company/comlog" class="nav-item nav-link active" style="color:black;"><b>Login</b></a></li>
+                </ul>
+                <center>
+                    <div>
+                        <div class="row justify-content-md-center py-5 px-xl-5">
+                            <div class="col-md-5 col-12 py-5">
+                                <div>
+                                    <h2><i class="fa fa-user-circle" style="font-size:50px"></i><br>COMPANY REGISTRATION</h2>
+                                </div>
+                                <form action="http://127.0.0.1:8000/company/comreg" method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="3YCAZNGZkt7zB4BOEsS197l6AGYdzSKDost62r8GZybV7s0mxQf9GOqhGRApEAoP">
+                                <input type="text" name="Comname" pattern="[A-Za-z]" class="form-control border-white p-4" placeholder="Name"><br>
+                                <input type="text" name="Phoneno" pattern="[0-9]{10}" title="Phone no must contain 10 numbers" class="form-control border-white p-4" placeholder="Mobile number"><br>
+                                <input type="email" name="Email" class="form-control border-white p-4" placeholder="Email"><br>
+                                <input type="text" name="Place" class="form-control border-white p-4" placeholder="Place"><br>
+                                <input type="text" name="District" class="form-control border-white p-4" placeholder="District"><br>
+                                <input type="text" name="Location" class="form-control border-white p-4" placeholder="Location"><br>
+                                <input type="text" name="Pincode" class="form-control border-white p-4" placeholder="Pincode"><br>
+                                <input type="file" name="Photo" class="form-control border-white p-4" placeholder="Photo"><br>
+                                <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control border-white p-4" placeholder="Password"><br>
+                                <input type="password" name="cpassword" class="form-control border-white p-4" placeholder="Confirm password"><br>
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary px-4">Register</button>
+                                </div>
+                            </form></div>
+                        
+                    </div>
+                </div></center>
+            </div>
+        
+        
+
+    <!-- Back to Top -->
+    <a href="http://127.0.0.1:8000/company/comreg#" class="btn btn-secondary back-to-top" style="display: inline;"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./comreg2_files/easing.min.js.download"></script>
+    <script src="./comreg2_files/owl.carousel.min.js.download"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="./comreg2_files/jqBootstrapValidation.min.js.download"></script>
+    <script src="./comreg2_files/contact.js.download"></script>
+
+    <!-- Template Javascript -->
+    <script src="./comreg2_files/main.js.download"></script>
+
+
+</body></html>

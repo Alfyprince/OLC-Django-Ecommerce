@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    
+
+    
+
+    <style>
+        /*author:starttemplate*/
+    /*reference site : starttemplate.com*/
+    
+    body {
+      background-image:url('../static/img/0.1.jpg');
+      background-position:center;
+      background-size:cover;
+      
+      -webkit-font-smoothing: antialiased;
+      font: normal 14px Roboto,arial,sans-serif;
+      font-family: 'Times New Roman', cursive!important;
+    }
+    
+    .container {
+        padding: 110px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ffffff!important;
+        opacity: 1; /* Firefox */
+        font-size:18px!important;
+    }
+    .form-login {
+        background-color:#8b4c4c1a;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        border-color:#d2d2d2;
+        border-width: 5px;
+        color:white;
+        box-shadow:0 1px 0 #562f2f00;
+    }
+    .form-control{
+        background:transparent!important;
+        color:white!important;
+        font-size: 18px!important;
+    }
+    h1{
+        color:white!important;
+    }
+    h4 { 
+     border:0 solid #fff; 
+     border-bottom-width:1px;
+     padding-bottom:10px;
+     text-align: center;
+    }
+    
+    .form-control {
+        border-radius: 10px;
+    }
+    .text-white{
+        color: white!important;
+    }
+    .wrapper {
+        text-align: center;
+    }
+    .footer p{
+        font-size: 18px;
+    }
+    label {
+        display: -webkit-box;
+        margin-bottom: 0.5rem;
+    }
+    </style>
+
+
+    <style>
+        .nav {
+            list-style-type:none;
+            text-align:left;
+            margin:0;
+            padding:0;
+        }
+        .nav li {
+            display:inline-block;
+            font-size:15px;
+            padding:8px;
+    
+        }
+        </style>
+
+
+    <!-- Navbar Start -->
+   
+            <div>
+                
+                <ul class="nav">
+                    <li><a href="/" class="nav-item nav-link active" style="color:black;"><b>Home</b></a></li>
+                    <li><a href="stafflog" class="nav-item nav-link active" style="color:black;"><b>Login</b></a></li>
+                </ul>
+
+               <center>
+                <div>
+                    <div class="row justify-content-md-center py-5 px-xl-5">
+                        <div class="col-md-5 col-12 py-5">
+                            <div>
+                                <h2><i class="fa fa-user-circle" style="font-size:50px"></i><br>STAFF REGISTRATION</h2>
+                                {% comment %} <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.</p> {% endcomment %}
+                            </div>
+                            <form action="" method="POST" enctype="multipart/form-data" >
+                                {% csrf_token %}
+                                {% comment %} <div class="input-group"> {% endcomment %}
+                                    <input type="text" name="staffname" class="form-control border-white p-4" placeholder="Name"><br>
+                                    <input type="text" name="Phoneno" class="form-control border-white p-4" pattern="[0-9]{10}" title="Phone no must contain 10 numbers" placeholder="Mobile number"><br>
+                                    <input type="email" name="Email" class="form-control border-white p-4" placeholder="Email"><br>
+                                    <input type="text" name="Homename" class="form-control border-white p-4" placeholder="House name"><br>
+                                    <input type="text" name="place" class="form-control border-white p-4" placeholder="Place"><br>
+                                    <input type="text" name="Location" class="form-control border-white p-4" placeholder="Location"><br>
+                                    <input type="text" name="Pincode" class="form-control border-white p-4" placeholder="Pincode"><br>
+                                    <input type="file" name="Photo" class="form-control border-white p-4" placeholder="Photo"><br>
+                                    <label  style="color:white;font-size:20px;">Proof</label>
+                                    <input type="file" name="proof" class="form-control border-white p-4" placeholder="Proof"><br>
+                                    <input type="password" name="password"class="form-control border-white p-4" placeholder="Password" 
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+                                    <input type="password" name="cpassword" class="form-control border-white p-4" placeholder="Confirm password"><br>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary px-4">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div></center>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

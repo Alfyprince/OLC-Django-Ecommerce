@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>OLC Enterprises - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    {% if pro.id %}
+    <div class="container-fluid">
+        <div class="row bg-white py-1 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <i class='fas fa-user-circle'style='font-size:30px;color:black'></i>&nbsp;
+                    <a class="text-dark" href="">{{pro.Cname}}</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif  %}
+
+        
+    </div>
+    <!-- Topbar End -->
+    <style>
+        
+        .nav {
+            list-style-type: none;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            margin-inline-start: auto;
+        }
+        .nav li {
+            display:inline-block;
+            font-size:15px;
+            padding:8px;
+    
+        }
+    .carousel-inner {
+        position: relative;
+        width: 1340px;
+        overflow: hidden;
+    }
+    </style>
+        
+        
+
+    <style>
+        /*author:starttemplate*/
+    /*reference site : starttemplate.com*/
+    
+    body {
+      background-image:url('../static/img/1.2.jpg');
+      background-position:center;
+      background-size:cover;
+      
+      -webkit-font-smoothing: antialiased;
+      font: normal 14px Roboto,arial,sans-serif;
+      font-family: 'Times New Roman', cursive!important;
+    }
+    
+    .container {
+        padding: 110px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ffffff!important;
+        opacity: 1; /* Firefox */
+        font-size:18px!important;
+    }
+    .form-login {
+        background-color:#8b4c4c1a;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        border-color:#d2d2d2;
+        border-width: 5px;
+        color:white;
+        box-shadow:0 1px 0 #562f2f00;
+    }
+    .form-control{
+        background:transparent!important;
+        color:white!important;
+        font-size: 18px!important;
+    }
+    h1{
+        color:white!important;
+    }
+    h4 { 
+     border:0 solid #fff; 
+     border-bottom-width:1px;
+     padding-bottom:10px;
+     text-align: center;
+    }
+    
+    .form-control {
+        border-radius: 10px;
+    }
+    .text-white{
+        color: white!important;
+    }
+    .wrapper {
+        text-align: center;
+    }
+    .footer p{
+        font-size: 18px;
+    }
+    </style>
+
+
+    <!-- Navbar Start -->
+    <div>
+        <div>
+            <div>
+                <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 625px;width:1340px;">
+                            <img class="img-fluid" src="{% static 'img/img01.jpg' %}" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    
+                                    <center>
+                                        <div>
+                                            <br><h1 class="mb-4 display-3 font-weight-semi-bold" style="color:white;">OLC Enterprises</h1>
+                                        </div>
+                                    </center> 
+                                    <div class="carousel-caption d-flex flex-column align-items-top justify-content-top">
+                                        <ul class="nav">
+                                            <li><a href="prodcat" class="nav-item nav-link"style="color:white;"><b>View Products</b></a></li>
+                                            <li><a href="ccart" class="nav-item nav-link"style="color:white;"><b>Cart</b></a></li>
+                                            <li><a href="bkdprod" class="nav-item nav-link"style="color:white;"><b>Booked</b></a></li>
+                                            <li><a href="vcomplaint" class="nav-item nav-link"style="color:white;"><b>Complaints</b></a></li>
+                                            <li><a href="cprof" class="nav-item nav-link"style="color:white;"><b>Profile</b></a></li>
+                                            <li><a href="/" class="nav-item nav-link active"style="color:white;"><i class="fa fa-power-off" style="color:white;"></i>&nbsp;&nbsp;<b>Log out</b></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Featured Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-check text-white m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0"style="color:white;">Quality Product</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-shipping-fast text-white m-0 mr-2"></h1>
+                    <h5 class="font-weight-semi-bold m-0"style="color:white;">Home Delivery</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fas fa-exchange-alt text-white m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0"style="color:white;">14-Day Return</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-phone-volume text-white m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0"style="color:white;">Call Us</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured End -->
+
+
+    
+
+
+    <!-- Vendor Start -->
+    <div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel vendor-carousel">
+                    <div>
+                          <img src="{% static 'img/a star.png' %}"style="height: 150px;width:150px;" alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a luker.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a fybros.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a havells.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a baja.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a vguard.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a panaso.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                    <div>
+                        <img src="{% static 'img/a lg.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+
+                    <div>
+                        <img src="{% static 'img/aasupreme.png' %}" style="height: 150px;width:150px;"alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid  mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span>OLC</span> Enterprises</h1>
+                </a>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Thiruthiparambu, P.O.Mundathicode<br>Wadakkanchery-680 601, Thrissur, Kerala</p>
+                <p class="mb-2"><i class="fa fa-envelope text-white mr-3"></i>lawrenceco@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-white mr-3"></i>+91 94472 25135</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-white mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="gallery"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                            <a class="text-white" href="contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a><br>
+                            <a class="text-white" href="about"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-white mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="gallery"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                            <a class="text-white" href="contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a><br>
+                            <a class="text-white" href="about"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-white mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-1 py-4" placeholder="Your Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-1 py-4" placeholder="Your Email"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary btn-block border-1 py-3" type="submit">Subscribe Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
