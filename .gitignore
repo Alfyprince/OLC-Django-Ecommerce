@@ -27,3 +27,6 @@ media/
 # OS
 .DS_Store
 Thumbs.db
+# Local image backup
+static/img_backup/
+optimize_images.py
